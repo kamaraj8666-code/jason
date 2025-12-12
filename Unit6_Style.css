@@ -1,0 +1,169 @@
+﻿body {
+    margin: 10px;
+    background-color:navajowhite;
+}
+
+
+/***************** Style the header******************* */
+/* Create two equal columns that floats next to each other */
+.HeaderColumnLeft {
+    background-image: url('Hotbeanslogo.png');
+    background-repeat: no-repeat;
+    float: left;
+    width: 40%;
+    height: 30vh;
+}
+
+
+/* Create two equal columns that floats next to each other */
+.HeaderColumnRight {
+    overflow: auto;
+    background-color:sandybrown;
+    float: right;
+    height: 20vh;
+    width: 60%;
+}
+
+
+.HeaderTitle {
+        padding-top:20px;
+        text-align:center;
+        font-family: 'MS Reference Sans Serif';
+        font-style: italic;
+        font-size: 4vh;
+    }
+
+.HeaderText {
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'MS Reference Sans Serif';
+    font-style: italic;
+    font-size: 2vh;
+}
+
+
+/***************** Style the nav bar******************* */
+
+/* Clear floats after the columns */
+.HeaderRow:after {
+    content: "";
+    display: table;
+    clear: both;
+    background-color: #f1f1f1;
+}
+
+/* The navbar container */
+.topnav
+    {
+    overflow:hidden;
+    background-color: #808080;
+}
+
+    /* Navbar links */
+    .topnav a {
+        float: left;
+        display: normal;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 2vh 6vh;
+        text-decoration:none;
+        font-weight:bold;
+        font-size:2vh;
+        width: 18vh;
+    }
+
+        /* Links - change color on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+/***************** Style the main part of the page******************* */
+/* Create three equal columns that floats next to each other */
+.columnLeft {
+    display: inline-block;
+    width: 30vh;
+}
+
+/* Create three equal columns that floats next to each other */
+.columnCentre {
+    display:inline-block;
+    width: 100vh;
+    height: 30em;
+    border-style: ridge;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #f1f1f1;
+}
+
+/* Create three equal columns that floats next to each other */
+.columnRight {
+    display: inline-block;
+    width: 22vh;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+/********************************************************************************/
+/***************** Style the footer******************* */
+.footer {
+    text-align: center;
+    margin-left: 40vh;
+    padding: 1%;
+    width: 100vh;
+    height: 10vh;
+    /**fix some images in the footer*/
+    background-image: url('../Images/OraclePartner.png'), url('../Images/MicrosoftPartner.png'), url('../Images/mysqlpartner.png');
+    background-position:  left,  center,  right;
+    background-size: contain, contain, contain;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/***************** Style the page elements******************* */
+/*style used for the list on the home page to make sure that images align correctly.*/
+ul {
+    display:inline-block;
+    text-align:center;
+}
+
+li {
+    text-align: left;
+}
+
+/*style used for the paragraph on the company profile page*/
+.ProfileText {
+    display: inline-block;
+    text-align: center;
+    font-weight:bold;
+}
+/***************** Style the error messsages******************* */
+.Error{
+    color:red;
+    font-weight:normal;
+}
+
+label {
+    font-weight: bold;
+}
+
+david-photo{
+    width: 50px;
+    height:50px;
+}
